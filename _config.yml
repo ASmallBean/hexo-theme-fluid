@@ -528,14 +528,18 @@ post:
     relative: false
 
   # 文章右侧目录
-  # Table of contents
+  # Table of contents (TOC)
   toc:
     enable: true
+    # 目录会选择这些节点作为标题
+    # TOC will select these nodes as headings
     headingSelector: "h1,h2,h3,h4,h5,h6"
+    # 层级的折叠深度，0 是全部折叠，大于 0 后如果存在下级标题则默认展开
+    # Collapse depth. If 0, all headings collapsed. If greater than 0, it will be expanded by default if there are sub headings
     collapseDepth: 0
 
-  # 版权声明
-  # Copyright
+  # 版权声明，会显示在每篇文章的结尾
+  # Copyright, will be displayed at the end of each post
   copyright:
     enable: true
     content: '本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-sa/4.0/deed.zh" rel="nofollow noopener">CC BY-SA 4.0 协议</a> ，转载请注明出处！'
